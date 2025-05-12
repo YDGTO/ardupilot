@@ -1170,7 +1170,7 @@ const AP_Param::GroupInfo ParametersG2::var_info[] = {
     // @Path: ../libraries/AC_AttitudeControl/AC_WeatherVane.cpp
     AP_SUBGROUPINFO(weathervane, "WVANE_", 59, ParametersG2, AC_WeatherVane),
 #endif
-
+    
     // ID 60 is reserved for the SHIP_OPS
 
     // extend to a new group
@@ -1178,6 +1178,10 @@ const AP_Param::GroupInfo ParametersG2::var_info[] = {
 
     // ID 62 is reserved for the SHOW_... parameters from the Skybrush fork at
     // https://github.com/skybrush-io/ardupilot
+
+    AP_GROUPINFO("STAR_R_CM", 10, ParametersG2, star_radius_cm, 1000.0f),
+
+    
 
     AP_GROUPEND
 };

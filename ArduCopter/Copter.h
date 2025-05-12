@@ -232,6 +232,7 @@ public:
 
     friend class PayloadPlace;
 
+    friend class ModeDrawStar;
     Copter(void);
 
 private:
@@ -1053,6 +1054,10 @@ private:
 #if MODE_TURTLE_ENABLED == ENABLED
     ModeTurtle mode_turtle;
 #endif
+#if MODE_DRAWSTAR_ENABLED == ENABLED
+    ModeDrawStar mode_DrawStar;
+#endif
+
 
     // mode.cpp
     Mode *mode_from_mode_num(const Mode::Number mode);

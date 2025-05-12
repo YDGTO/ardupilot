@@ -179,6 +179,13 @@ Mode *Copter::mode_from_mode_num(const Mode::Number mode)
             break;
 #endif
 
+
+#if MODE_DRAWSTAR_ENABLED == ENABLED
+        case Mode::Number::DRAWSTAR:
+            ret = &mode_DrawStar;
+            break;
+#endif
+
         default:
             break;
     }

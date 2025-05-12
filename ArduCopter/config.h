@@ -216,6 +216,7 @@
 # define MODE_LOITER_ENABLED ENABLED
 #endif
 
+
 //////////////////////////////////////////////////////////////////////////////
 // Position Hold - enable holding of global position
 #ifndef MODE_POSHOLD_ENABLED
@@ -263,6 +264,13 @@
 #ifndef MODE_TURTLE_ENABLED
 # define MODE_TURTLE_ENABLED HAL_DSHOT_ENABLED && FRAME_CONFIG != HELI_FRAME
 #endif
+
+//////////////////////////////////////////////////////////////////////////////
+// DrawStar mode - 五角星航线模式
+#ifndef MODE_DRAWSTAR_ENABLED
+# define MODE_DRAWSTAR_ENABLED ENABLED
+#endif
+
 
 //////////////////////////////////////////////////////////////////////////////
 // Flowhold - use optical flow to hover in place
