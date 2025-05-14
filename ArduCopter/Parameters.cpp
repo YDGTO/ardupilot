@@ -1179,7 +1179,6 @@ const AP_Param::GroupInfo ParametersG2::var_info[] = {
     // ID 62 is reserved for the SHOW_... parameters from the Skybrush fork at
     // https://github.com/skybrush-io/ardupilot
 
-    AP_GROUPINFO("STAR_R_CM", 10, ParametersG2, star_radius_cm, 1000.0f),
 
     
 
@@ -1252,6 +1251,7 @@ const AP_Param::GroupInfo ParametersG2::var_info2[] = {
     // @Range: 0 10
     // @User: Advanced
     AP_GROUPINFO("FS_EKF_FILT", 8, ParametersG2, fs_ekf_filt_hz, FS_EKF_FILT_DEFAULT),
+    AP_GROUPINFO("STAR_R_CM", 10, ParametersG2, star_radius_cm, 1000.0f),
 
     // ID 62 is reserved for the AP_SUBGROUPEXTENSION
 

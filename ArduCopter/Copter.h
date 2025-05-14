@@ -1054,6 +1054,7 @@ private:
 #if MODE_TURTLE_ENABLED == ENABLED
     ModeTurtle mode_turtle;
 #endif
+
 #if MODE_DRAWSTAR_ENABLED == ENABLED
     ModeDrawStar mode_DrawStar;
 #endif
